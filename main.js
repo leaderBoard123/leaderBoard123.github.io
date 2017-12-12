@@ -28,7 +28,7 @@ function submitForm(e){
   // Save message
   saveMessage(username, score);
 
-  // Clear form
+  // Clear form for this
   document.getElementById('SignUp').reset();
 }
 
