@@ -27,14 +27,14 @@ function getData(data){
     var li = document.createElement('li', (username + ": " + time + "\n"));
     jQuery(li).parent('scorelist');
     console.log(username + ": " + time + "\n");
-    arr[i] = (username + ": " + time + "\n")
+    arr[i] = (username, time);
     document.write(username + ": " + time + "\n");
   }
 }
 
   var list = function(arr) {
   for (var prop in arr) {
-    document.getElementById('scorelist').innerHTML += '<li>' + prop + '</li>';
+    document.getElementById('scoreList').innerHTML += '<li>' + prop + '</li>';
     console.log(prop);
   }
 }
