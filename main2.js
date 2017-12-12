@@ -28,7 +28,7 @@ function getData(data){
     jQuery(li).parent('scorelist');
     console.log(username + ": " + time + "\n");
     arr[i] = (username + ": " + time + "\n")
-    //document.write(username + ": " + time + "\n");
+    document.write(username + ": " + time + "\n");
   }
 }
 
