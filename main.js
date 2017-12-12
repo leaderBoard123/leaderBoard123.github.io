@@ -11,11 +11,11 @@
   firebase.initializeApp(config);
 
 // Reference messages collection
-var messagesRef = firebase.database().ref('Users');
+var userRef = firebase.database().ref('Users');
 
 
 // Listen for form submit
-document.getElementById('SignUp').addEventListener('submit', submitForm);
+document.getElementById('ScorePost').addEventListener('submit', submitForm);
 
 // Submit form
 function submitForm(e){
@@ -26,10 +26,10 @@ function submitForm(e){
   var score = getInputVal('score');
 
   // Save message
-  saveMessage(username, score);
+  saveScore(username, score);
 
   // Clear form for this
-  document.getElementById('SignUp').reset();
+  document.getElementById('ScorePost').reset();
 }
 
 // Function to get get form values
@@ -38,9 +38,9 @@ function getInputVal(id){
 }
 
 // Save message to firebase
-function saveMessage(username, score){
-  var newMessageRef = messagesRef.push();
-  newMessageRef.set({
+function saveScore(username, score){
+  var newUserRef = userRef.push();
+  newUserRef.set({
     username: username,
     score:score,
   });
