@@ -15,7 +15,7 @@
     <div class="wrapper">
       <div class="contact">
         <h3>Leader Board</h3>
-        <form id="SignUp">
+        <form id="ScorePost">
           <p>
             <label>Username</label>
             <input type="text" name="username" id="username" required>
@@ -30,6 +30,9 @@
           <p class="full">
             <button type="submit" onclick="window.location.href='leaderboard.html'">Leader Board</button>
           </p>
+          <p class="full">
+            <button type="getJson" onclick="window.location.href='siebel (1).json'">Siebel (1).json</button>
+          </p>
         </form> 
       </div>
     </div>
@@ -37,7 +40,13 @@
 
 
   <script src="https://www.gstatic.com/firebasejs/4.3.0/firebase.js"></script>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
   <script src="main.js"></script>
 </body>
-
+<body>
+  <p>
+    <h4> <id = "scorelist">
+    </h4>
+  </p>
+</body>
 </html>
